@@ -9,12 +9,11 @@ const Catelog = () => {
 
     const toggleAddForm = () => {
         setIsAddFormVisible(!isAddFormVisible);
-        setEditItem(null); // Reset the item being edited when showing the Add form
+        // Reset the item being edited when showing the Add form
     };
 
     const handleCloseForm = () => {
         setIsAddFormVisible(false);
-        setEditItem(null);
     };
 
     const handleRemoveFromCatelog = async (itemId) => {
